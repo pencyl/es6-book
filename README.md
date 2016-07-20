@@ -1,10 +1,10 @@
 <img src="img/logo.png" class="center-image" height="50" />
 
-# ES6 Course Introduction
-
 >
 >**[View this book online here](https://pencyl.gitbooks.io/es6-book)**
 >
+
+# ES6 Course Introduction
 
 #### Morning (9.30 - 12.30)
 - ES6/ES7, history, browser support and where it is going
