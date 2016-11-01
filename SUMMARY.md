@@ -8,6 +8,7 @@
   * [History](es6/history.md)
   * [Browser support](es6/browser-support.md)
   * [Node.js support](es6/node-support.md)
+  * [TC39 Process](es6/tc39-process.md)
   * [Babel](es6/babel.md)
 * [Strings]()
   * [Templates](strings/template-literals.md)

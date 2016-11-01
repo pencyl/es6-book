@@ -16,5 +16,3 @@ You've probably used it without realising it. ES5 brought strict mode, Object.fr
 Around 2012 work started on what we call ES6, originally named ES.Harmony, then ECMAScript 6th Edition.
 
 In 2015 the committee responsible decided to move to define standards on an annual basis. New features are now only added to a spec once approved rather than massive drafts that would take longer to finalize. As a result ES6 is officially known as ES2015.
-
-> The [TC39 Process](https://docs.google.com/document/d/1QbEE0BsO4lvl7NFTn5WXWeiEIBfaVUF7Dk0hpPpPDzU) explains the various stages of a desired feature until it becomes adopted and included in the language.

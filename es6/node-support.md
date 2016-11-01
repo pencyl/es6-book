@@ -1,8 +1,8 @@
 # Node.js support
 
-## 6.2.2
+## 6.9.1
 
-Node 6.2.2 supports almost all of the ES6 features we'll be going through today, without the `--harmony` flag. It will eventually transition to a LTS (Long term support) release too.
+Node 6.9.1 supports all of the ES6 features we'll be going through today, without the `--harmony` flag. It will eventually transition to a LTS (Long term support) release too.
 
 ## 5.12.0
 
