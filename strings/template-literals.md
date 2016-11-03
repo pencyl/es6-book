@@ -2,11 +2,14 @@
 
 Template literals allow us to have multi line strings and use expressions & variables within a string.
 
-To create a template literal, it must be enclosed in a "backtick", `` ` ``. If you ever need to use a backtick within your template literal, you can escape it with a backslash before the backtick.
+To create a template literal, it must be enclosed in a "backtick", instead of quotes or double quotes.
 
 ```javascript
-var backtickInTemplateLiteral = `foo \` `;
+var oldString = "hi";
+var newString = `hi`;
 ```
+
+> If you ever need to use a backtick within your template literal, you can escape it with a backslash before the backtick.
 
 ## Multi line strings
 
@@ -40,12 +43,12 @@ With a template literal we can now use variables or expressions inline without s
 
 Before...
 ```javascript
-console.log('Error: ' + errorMessage + ' - ' + reason + ' ' + '!');
+var welcomeMessage = "Welcome, " + name + ".";
 ```
 
 Converting to a template literal and wrapping our variables in `${}` allows us to use them inline
 ```javascript
-console.log(`Error: ${errorMessage} - ${reason} !`);
+var welcomeMessage = `Welcome ${name}.`;
 ```
 
 They can also be expressions
@@ -64,6 +67,11 @@ console.log(`5 x 5 is ${multiply(5, 5)}`);
 Logging
 ```javascript
 logger.info(`${req.method} request ${req.id} received at ${req.path}`);
+```
+
+No longer having to escape singlequotes whenever you use a contraction
+```javascript
+describe(`myFunc shouldn't throw an error`, ...
 ```
 
 "Templating", whilst there's [thousands](https://libraries.io/search?platforms=NPM&q=templating) of better ways to do this. You could

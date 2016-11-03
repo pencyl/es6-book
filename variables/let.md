@@ -103,7 +103,7 @@ let a = 'hey';
 let & const declarations **do not hoist**. Unlike var's they will not return undefined if accessed before initialization, they will throw an error!
 
 ### Best practices
-To avoid TDZ errors, always declare let's at the top of their block
+To avoid TDZ errors, consider declaring let's at the top of their block
 
 ```javascript
 function name (obj) {
@@ -137,5 +137,36 @@ for (let i = 1; i <= 5; i++) {
     console.log('You clicked item ' + i);
   });
   $list.append(item);
+}
+```
+
+### Should let replace var?
+It's quite possible your codebase relys on non blocked scoped closure in loops like above, or, you're accidentally accessing hoisted vars like so...
+
+```javascript
+myObj = {};
+
+// loads of code...
+var myObj;
+```
+Find & replacing all of you're existing vars to lets could lead to issues. If you do want to use it heavily you should refactor on a case by case.
+
+Sometimes, it might even make more sense to use a mix of var and let
+
+```javascript
+function maxWidth() {
+  var width = 10;
+
+  if (width > 100) {
+      let a = width * 2;
+      console.log(a);
+  }
+
+  if (width > 500) {
+      let b = width / 2;
+      console.log(b);
+  }
+
+  console.log(width);
 }
 ```
