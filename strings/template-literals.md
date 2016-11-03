@@ -32,7 +32,7 @@ blah`
 ```
 
 > If your editor doesn't support ES6, syntax highlighting with multi line strings is going to start to break up.
-> We've covered syntax highlighting in [further reading](reference/index.md)
+> We've covered syntax highlighting in [further reading](/reference)
 
 ## Expressions
 
