@@ -13,6 +13,7 @@
 * [Strings]()
   * [Templates](strings/template-literals.md)
 * [Variables]()
+  * [Var](variables/var.md)
   * [Let](variables/let.md)
   * [Const](variables/const.md)
 * [Functions]()

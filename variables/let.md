@@ -1,25 +1,83 @@
 # let
 
-let's are the new var, they work very much like var. The main difference is that the scope of a var variable is the entire enclosing function. let's are block scope variables. Unlike a var their scope is limited to the block **{}** they are declared in.
+let's are the new var, they work very much like var. The main difference is that the scope of a var variable is the entire enclosing function. let's are block scope variables.
 
+[Unlike var](/variables/var), let's scope is limited to the block `{}` they are declared in.
+
+## Blocks
+What's a block again?
+
+Blocks are completely valid and have been implemented since JavaScript 1.0
+
+This is valid...
 ```javascript
-function foo () {
-	var a = 1;
+function blocks() {
+  var message = 'hi';
 
-	{
-		let b = a * 10;
-		console.log(b); // 10
-		var a = 'whatever';
-	}
-
-	console.log(a); // whatever
-	console.log(b); // "ReferenceError: b is not defined
+  {
+    return message;
+  }
 }
 
-foo();
+blocks(); // 'hi'
+```
+
+Up until now you've probably only used blocks to control flow statements, e.g. `if, else, for & while`
+
+```javascript
+function varScope () {
+
+    if (true) {
+        var price = 10;
+        console.log(price); // 1
+    }
+
+    console.log(price); // 10!
+}
+
+varScope();
+```
+
+The same function rewritten to use let
+
+```javascript
+function letScope () {
+
+    if (true) {
+        let price = 10;
+        console.log(price); // 1
+    }
+
+    console.log(price); // "ReferenceError: price is not defined
+}
+
+letScope();
+```
+
+Taking it a step further, multiple blocks could reuse the same variable name when using let, as  their scope is limited to the block they're declared in
+
+```javascript
+function letScope () {
+
+    if (true) {
+        let price = 10;
+        console.log(price); // 1
+    }
+
+    {
+      let price = 100000;
+      console.log(price); // 100000
+    }
+
+    console.log(price); // "ReferenceError: price is not defined
+}
+
+letScope();
 ```
 
 ### The TDZ (Temporal Dead Zone)
+What was that ReferenceError all about?
+
 var's are "hoisted", which allows us to use them before they're defined.
 ```javascript
 function baz() {
