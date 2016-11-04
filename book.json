@@ -1,6 +1,7 @@
 {
     "plugins": [
-        "hide-published-with"
+        "hide-published-with",
+        "-sharing"
     ],
     "pluginsConfig": {
 
