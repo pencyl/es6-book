@@ -2,6 +2,8 @@
 
 Template literals allow us to have multi line strings and use expressions & variables within a string.
 
+Think of them as better strings.
+
 To create a template literal, it must be enclosed in a "backtick", instead of quotes or double quotes.
 
 ```javascript
@@ -71,10 +73,22 @@ function multiply (a, b) { return a * b; }
 logger.info(`${req.method} request ${req.id} received at ${req.path}`);
 ```
 
-##### Language
-No longer having to escape singlequotes whenever you use a contraction
+##### Character Escaping
+
+In a single quoted string you'd have to escape single quotes using a backslash
 ```javascript
-describe(`myFunc shouldn't throw an error`, ...
+'That\'s annoying'
+```
+
+In a double quoted string you'd have to escape single quotes using a backslash
+```javascript
+"\"The beauty of me is that I’m very rich.\" - Donald Trump"
+```
+
+In the real world, you are rarely going to need to escape a backtick, which should make your life a little easier. Strings like the below would be much easier to find with grep/ your editor of choice.
+
+```javascript
+describe(`/api/blah shouldn't return a 404`, ...
 ```
 
 ##### Templating
@@ -102,3 +116,7 @@ tmpl(data);
 //   <tr><td>Rimmer</td></tr>
 // </table>
 ```
+
+## Should they replace strings?
+
+What you prefer is up to you. They're still a new feature, so it might be clearer to just use them as and when you need them.

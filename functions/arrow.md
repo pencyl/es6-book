@@ -14,8 +14,8 @@ var bar = (a, b) => a + b;
 
 - It's faster to type, maybe
 - Don't need ```function``` keyword
-- Don't always need parentheses **()**
-- Don't always need curly brackets **{}**
+- Don't always need parentheses `()`
+- Don't always need curly brackets `{}`
 - They're always function expressions, cannot be bound, cannot be named
 
 #### Parameters
