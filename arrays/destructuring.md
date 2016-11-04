@@ -1,8 +1,6 @@
 # Destructuring
 
-Destructuring assignments give us a much cleaner way of extracting values from arrays and objects.
-
-## Arrays
+Destructuring assignments give us a much cleaner way of extracting values from arrays.
 
 Consider this array
 ```javascript
@@ -59,40 +57,4 @@ Variables can even be assigned defaults incase the value pulled from the array i
 ```javascript
 var [a=1, b=2, c=3] = [5, 10]
 console.log(a, b, c); // 5, 10, 3
-```
-
-## Object
-
-```javascript
-var { a, b } = { a: 10, b: 20 };
-console.log(a, b); // 10, 20
-```
-
-### Assigning to different variable names
-```javascript
-var { a: hello, b } = { a: 10, b: 20 };
-console.log(hello); // 10
-```
-
-### Default values
-Just like with arrays we can still use default values incase a value is missing.
-
-```javascript
-var { a, b, c=0 } = { a: 10, b: 20 };
-console.log(a, b, c); // 10, 20, 0
-```
-
-### Nested objects
-```javascript
-var request = {
-  path: '/endpoint',
-  url: '/endpoint?a=b',
-  query: 'search=xyz',
-  params: {
-    search: 'xyz'
-  }
-};
-
-var { params: {search: searchQuery} } = request;
-console.log(searchQuery); // xyz
 ```
