@@ -20,6 +20,7 @@
 * [Functions]()
   * [Arrow](functions/arrow.md)
   * [Default parameters](functions/default-params.md)
+  * [Naming](functions/naming.md)
 * [Class construction]()
   * [Intro](classes/intro.md)
   * [Constuctor](classes/constructor.md)
