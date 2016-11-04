@@ -20,8 +20,9 @@ function getCar(make) {
   return {
     make, // same as make: make
     ['is' + make]: true // we just computed the key name
+    [ 'was' + (() => make)() ]: true //we can run an expression to create key too
   }
 }
 
-getCar('BMW'); // {"make":"BMW","isBMW":true}
+getCar('BMW'); // {"make":"BMW","isBMW":true, "wasBMW":true}
 ```
