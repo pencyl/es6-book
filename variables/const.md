@@ -1,6 +1,6 @@
 # const
 
-const isn't about protected, frozen, constant or immutable variables. The only constant is the *binding*, it's a immutable reference to a binding.
+const isn't about protected, frozen, constant or immutable variables. The only constant is the *binding*, it's a immutable reference to a binding. Like let, const's are block scope.
 
 ```javascript
 const foo = [];
