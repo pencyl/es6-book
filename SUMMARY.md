@@ -12,6 +12,7 @@
   * [Babel](es6/babel.md)
 * [Strings]()
   * [Templates](strings/template-literals.md)
+  * [Manipulation](strings/manipulation.md)
 * [Variables]()
   * [Var](variables/var.md)
   * [Let](variables/let.md)

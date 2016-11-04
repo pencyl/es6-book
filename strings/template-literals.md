@@ -43,38 +43,42 @@ With a template literal we can now use variables or expressions inline without s
 
 Before...
 ```javascript
-var welcomeMessage = "Welcome, " + name + ".";
+var name = 'Mike';
+var welcomeMessage = 'Welcome, ' + name + '.'; // 'Welcome, Mike.'
 ```
 
 Converting to a template literal and wrapping our variables in `${}` allows us to use them inline
 ```javascript
-var welcomeMessage = `Welcome ${name}.`;
+var name = 'Mike';
+var welcomeMessage = `Welcome ${name}.`; // 'Welcome, Mike.'
 ```
 
 They can also be expressions
 ```javascript
-console.log(`5 x 5 is ${5 * 5}`);
+`5 x 5 is ${5 * 5}`; // '5 x 5 is 25'
 ```
 
 Which can also be a call to a function
 ```javascript
 function multiply (a, b) { return a * b; }
-console.log(`5 x 5 is ${multiply(5, 5)}`);
+`2 x 2 is ${multiply(2, 2)}`; // '2 x 2 is 4'
 ```
 
 ## Examples
 
-Logging
+##### Logging
 ```javascript
 logger.info(`${req.method} request ${req.id} received at ${req.path}`);
 ```
 
+##### Language
 No longer having to escape singlequotes whenever you use a contraction
 ```javascript
 describe(`myFunc shouldn't throw an error`, ...
 ```
 
-"Templating", whilst there's [thousands](https://libraries.io/search?platforms=NPM&q=templating) of better ways to do this. You could
+##### Templating
+Whilst there's [thousands](https://libraries.io/search?platforms=NPM&q=templating) of better ways to do this. You could use it for basic templating without any additional dependencies...
 ```javascript
 const tmpl = names => `
   <table>
