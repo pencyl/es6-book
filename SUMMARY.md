@@ -66,6 +66,5 @@
   * [Generators with Promises](generators/promise.md)
 * [Await/Async]()
   * [Basic Await/Async](await/basic.md)
-  * [Multi Promise Await/Async](await/multi.md)
   * [Error handing Await/Async](await/error.md)
 * [Further Reading and Reference](reference/index.md)

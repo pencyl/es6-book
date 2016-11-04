@@ -9,12 +9,15 @@ async function myFunc() {
         .catch(err => console.log(err))
 }
 
-//Same as
+//Similar too
 
 async function myFunc() {
     let data = {};
     try {
-        data = await promiseFunc();
+        data.first = await promiseFunc();
+        //We can also synchronous out wait
+        data.second = await promiseFunc1();
+        data.third = await promiseFunc2();
     } catch (err) {
         console.log(err);
     }
