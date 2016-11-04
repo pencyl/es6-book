@@ -41,6 +41,8 @@
   * [Keys](objects/keys.md)
   * [Values](objects/values.md)
   * [Freeze](objects/freeze.md)
+  * [Property shorthand](objects/shorthand.md)
+  * [Computed property names](objects/computed.md)
 * [Spread]()
   * [Array](spread/array.md)
   * [Function Parameters](spread/function.md)
