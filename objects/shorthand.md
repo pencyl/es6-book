@@ -14,6 +14,6 @@ In ES6 you can shorten this syntax...
 ```javascript
 var url = 'http://google.com';
 request({
-  url
+  url // same as url: url
 }).then(...)
 ```
