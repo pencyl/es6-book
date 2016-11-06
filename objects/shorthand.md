@@ -1,4 +1,4 @@
-# Property shorthand
+# Property value shorthand
 
 You've probably written code that assigns properties using variables of the same name before.
 
