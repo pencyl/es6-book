@@ -2,23 +2,58 @@
 
 Destructuring assignments give us a much cleaner way of extracting values from objects.
 
+Without destructuring
 ```javascript
-var { a, b } = { a: 10, b: 20 };
-console.log(a, b); // 10, 20
+var data = { productName: 'Socks', price: 5 };
+
+var productName = data.productName;
+var price = data.price;
+
+console.log(productName); // 'Socks'
+console.log(price); // 5
+```
+
+With destructuring
+```javascript
+var data = { productName: 'Hat', price: 20 };
+
+var { productName, price } = data;
+
+console.log(productName); // 'Hat'
+console.log(price); // 20
 ```
 
 ### Assigning to different variable names
 ```javascript
-var { a: hello, b } = { a: 10, b: 20 };
-console.log(hello); // 10
+var data = { productName: 'Scarf', price: 10 };
+
+var { productName: title, price } = data;
+
+console.log(title); // 'Scarf'
+console.log(price); // 10
+
+console.log(productName); // "ReferenceError: productName is not defined
 ```
 
 ### Default values
-Just like with arrays we can still use default values incase a value is missing.
-
+If you try to destructure and the variable isn't defined. It will return undefined.
 ```javascript
-var { a, b, c=0 } = { a: 10, b: 20 };
-console.log(a, b, c); // 10, 20, 0
+var data = { productName: 'Belt', price: 50 };
+
+var { productName, price, discount } = data;
+
+console.log(discount);
+```
+
+Just like with arrays we can still use default values incase a value is missing.
+```javascript
+var data = { productName: 'Coat', price: 150 };
+
+var { productName, price, discount = 0 } = data;
+
+console.log(productName); // 'Coat'
+console.log(price); // 150
+console.log(discount); // 0
 ```
 
 ### Nested objects

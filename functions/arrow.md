@@ -3,10 +3,10 @@
 The "new function"
 
 ```javascript
-var bar = function (a, b) {
+var foo = function (a, b) {
   return a + b;
 }
-// becomes...
+// can become...
 var bar = (a, b) => a + b;
 ```
 
@@ -23,15 +23,18 @@ The arrow function is composed with a parameter list, in a surrounding ```()``` 
 
 Two params, need parentheses
 ```javascript
-(one, two) => { one + two };
+var foo = (a, b) => { a + b };
+foo(1, 2); // 3
 ```
 One param, omit parentheses
 ```javascript
-one => { one * 2 };
+var foo = a => { a * 2 };
+foo(1); // 2
 ```
 Zero params, just parentheses
 ```javascript
-() => 1000;
+var foo = () => 1000;
+foo(); // 1000
 ```
 
 > Note: All existing functionality of parameters are still available (rest parameters, default values, destructuring)
