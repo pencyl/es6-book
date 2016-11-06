@@ -57,16 +57,20 @@ console.log(discount); // 0
 ```
 
 ### Nested objects
+
 ```javascript
-var request = {
-  path: '/endpoint',
-  url: '/endpoint?a=b',
-  query: 'search=xyz',
-  params: {
-    search: 'xyz'
+var data = {
+  productName: 'Shoes',
+  price: 24,
+  stock: {
+    store: 4,
+    online: 100
   }
 };
 
-var { params: {search: searchQuery} } = request;
-console.log(searchQuery); // xyz
+var { stock: { store } } = data;
+console.log(store); // 4
+
+var { stock: { store: inStoreStock } } = data;
+console.log(inStoreStock); // 4
 ```
