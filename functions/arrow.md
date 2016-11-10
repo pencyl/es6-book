@@ -3,11 +3,13 @@
 The "new function"
 
 ```javascript
-var foo = function (a, b) {
+var add = function (a, b) {
   return a + b;
 }
-// can become...
-var bar = (a, b) => a + b;
+```
+Becomes
+```javascript
+var add = (a, b) => a + b;
 ```
 
 ### What's different
@@ -23,13 +25,13 @@ The arrow function is composed with a parameter list, in a surrounding ```()``` 
 
 Two params, need parentheses
 ```javascript
-var foo = (a, b) => { a + b };
-foo(1, 2); // 3
+var add = (a, b) => { a + b };
+add(1, 2); // 3
 ```
 One param, omit parentheses
 ```javascript
-var foo = a => { a * 2 };
-foo(1); // 2
+var double = a => { a * 2 };
+double(1); // 2
 ```
 Zero params, just parentheses
 ```javascript
