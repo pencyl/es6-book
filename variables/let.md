@@ -24,6 +24,8 @@ blocks(); // 'hi'
 
 Up until now you've probably only used blocks to control flow statements, e.g. `if, else, for & while`
 
+## Block scoped variables using let
+
 ```javascript
 function varScope () {
 
@@ -53,8 +55,26 @@ function letScope () {
 
 letScope();
 ```
+The price variable defined in our `if (true)` block is only scoped to that block.
 
-Taking it a step further, multiple blocks could reuse the same variable name when using let, as  their scope is limited to the block they're declared in
+Let's swap the values of an array, using a temporary variable, but keeping that temporary variable hidden away in it's own block.
+
+```javascript
+function swap(values) {
+  {
+    let temp = values[0];
+    values[0] = values[1];
+    values[1] = temp;
+  }
+
+  console.log(values); // [2, 1]
+  console.log(temp); // "ReferenceError: temp is not defined
+}
+
+swap([1, 2]);
+```
+
+Multiple blocks could reuse the same variable name when using let, as  their scope is limited to the block they're declared in
 
 ```javascript
 function letScope () {
