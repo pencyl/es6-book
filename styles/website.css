@@ -4,10 +4,22 @@
 }
 
 .spec {
-  background: #E5DEB0;
   position: absolute;
   top: 0;
   right: 0;
   padding: 1em;
   font-weight: 700;
+}
+
+.es5 {
+  background: #008EFF;
+  color: #fff;
+}
+
+.es6 {
+  background: #E5DEB0;
+}
+
+.es7 {
+  background: #E98D00;
 }
