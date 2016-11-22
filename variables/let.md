@@ -5,7 +5,7 @@ let's are the new var, they work very much like var. The main difference is that
 [Unlike var](/variables/var), let's scope is limited to the block `{}` they are declared in.
 
 ## Blocks
-What's a block again?
+What's a block?
 
 Blocks are completely valid and have been implemented since JavaScript 1.0
 
