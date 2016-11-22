@@ -2,8 +2,13 @@
 
 This [proposal](https://github.com/tc39/proposal-trailing-function-commas) is now stage 4, expected to be published in 2017/ES2017. So to use it you will need to use the [ES2017 Babel preset](https://www.npmjs.com/package/babel-preset-es2017).
 
+<br/>
 
-The indention of this proposal is to allow trailing commas in function calls and definitions when JavaScript is written in this specific style...
+> There's also a [babel preset](https://www.npmjs.com/package/babel-plugin-syntax-trailing-function-commas) specifically for this feature if you want to be more specific, or not include the entire 2017 spec in your babel config
+
+<br/>
+
+The intention of this proposal is to allow trailing commas in function calls and definitions when JavaScript is written in this specific style...
 
 It's not life changing and you may not agree with the style, but, it's a good example of an accepted proposal to the spec.
 
@@ -57,4 +62,6 @@ If the function was defined with trailing commas, it would just be a two line ch
  );
 ```
 
-> There's also a [babel preset](https://www.npmjs.com/package/babel-plugin-syntax-trailing-function-commas) specifically for this feature if you want to be more specific or not include the entire 2017 spec in your preset
+<br/>
+
+> This technique is commonly used with objects, where trailing commas are already legal and valid. It can be enforced in ESLint with the [comma-dangle rule](http://eslint.org/docs/rules/comma-dangle).
