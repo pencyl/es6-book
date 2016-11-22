@@ -25,6 +25,7 @@
   * [Default parameters](functions/default-params.md)
   * [Rest parameters](functions/rest-parameters.md)
   * [Arrow](functions/arrow.md)
+  * [Trailing commas](functions/trailing-commas.md)
 * [Class construction]()
   * [Intro](classes/intro.md)
   * [Constuctor](classes/constructor.md)
