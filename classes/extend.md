@@ -2,6 +2,7 @@
 
 <div class="spec es6">ES6</div>
 
+
 We can extend out classes to inherit from a parent/base class. We then have access to all the methods and variables from the parent that we can add too in our new subclass.
 
 ```javascript

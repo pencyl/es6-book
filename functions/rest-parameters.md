@@ -2,6 +2,7 @@
 
 <div class="spec es6">ES6</div>
 
+
 Think of it as "the rest"
 
 ```javascript

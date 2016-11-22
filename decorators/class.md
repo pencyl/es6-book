@@ -2,6 +2,7 @@
 
 <div class="spec es6">ES6</div>
 
+
 Decorators are a way of enriching your Classes. They provide similar functionality to Inheritence or Mixins.
 
 A Class Decorator is used to add extra methods or variables to a class. It works just like extend in class construction but has the advantage that is doesn't rely on chained inheritance and decorators can be mixed and matched.

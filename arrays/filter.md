@@ -2,6 +2,7 @@
 
 <div class="spec es5">ES5</div>
 
+
 Part of ES5, now widely available.
 
 Returns an array of matching items which the provided filtering function returns true.

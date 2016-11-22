@@ -2,6 +2,7 @@
 
 <div class="spec es6">ES6</div>
 
+
 Prior to ES6 there were numerous ways of modularizing JavaScript code. The two most common are
 
 ### Asynchronous Module Definition (AMD)

@@ -4,11 +4,14 @@
 }
 
 .spec {
-  position: absolute;
-  top: 0;
-  right: 0;
+  float: right;
   padding: 1em;
   font-weight: 700;
+}
+
+.es1 {
+  background: #003e70;
+  color: #fff;
 }
 
 .es5 {

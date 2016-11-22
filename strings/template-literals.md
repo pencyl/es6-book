@@ -2,6 +2,7 @@
 
 <div class="spec es6">ES6</div>
 
+
 Template literals allow us to have multi line strings and use expressions & variables within a string.
 
 Think of them as better strings.

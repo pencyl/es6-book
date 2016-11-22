@@ -2,6 +2,7 @@
 
 <div class="spec es5">ES5</div>
 
+
 Part of ES5, now widely available.
 
 Object.assign is used to copy all of the values and properties of an object to a new target object.

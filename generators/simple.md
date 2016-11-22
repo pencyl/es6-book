@@ -2,6 +2,7 @@
 
 <div class="spec es6">ES6</div>
 
+
 A generator function is used for defining an iterator that can maintain its own state. The generated iterator can also be paused and resumed.
 
 ```javascript

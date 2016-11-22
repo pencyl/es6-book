@@ -2,6 +2,7 @@
 
 <div class="spec es6">ES6</div>
 
+
 let's are the new var, they work very much like var. The main difference is that the scope of a var variable is the entire enclosing function. let's are block scope variables.
 
 [Unlike var](/variables/var), let's scope is limited to the block `{}` they are declared in.

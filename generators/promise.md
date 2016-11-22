@@ -2,6 +2,7 @@
 
 <div class="spec es6">ES6</div>
 
+
 A generator function can use yeild and next() to deal with promises (most likely xhr requests).
 
 ```javascript

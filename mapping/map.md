@@ -2,6 +2,7 @@
 
 <div class="spec es6">ES6</div>
 
+
 The Map object is a simple key/value map. It is a formalisation and replacement for a simpler object literal map.
 
 ```javascript

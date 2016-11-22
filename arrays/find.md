@@ -2,6 +2,7 @@
 
 <div class="spec es6">ES6</div>
 
+
 Returns the first match found by the testing function.
 
 The testing function receives the current element, index and full array as parameters.

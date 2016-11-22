@@ -2,6 +2,7 @@
 
 <div class="spec es6">ES6</div>
 
+
 ```javascript
 const cars = {
     ford: 'american',

@@ -2,6 +2,7 @@
 
 <div class="spec es6">ES6</div>
 
+
 Previously in JavaScript if you wanted to use default parameters you'd have to use a hack like this:
 
 ```javascript

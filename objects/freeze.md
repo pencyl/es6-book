@@ -2,6 +2,7 @@
 
 <div class="spec es5">ES5</div>
 
+
 Object.freeze freezes an object, stopping any further manipulation. It essentially makes the object *immutable*.
 
 Outside strict mode attempts to change it will silently fail

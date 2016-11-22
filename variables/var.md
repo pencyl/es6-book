@@ -2,6 +2,7 @@
 
 <div class="spec es1">ES1</div>
 
+
 ## Scope
 
 var's scope are limited to functions

@@ -2,6 +2,7 @@
 
 <div class="spec es6">ES6</div>
 
+
 This has been supported in most engines prior to ES6, but with ES6, it becomes part of the spec.
 
 ```javascript
