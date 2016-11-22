@@ -1,5 +1,7 @@
 # Destructuring
 
+<div class="spec es6">ES6</div>
+
 Destructuring assignments give us a much cleaner way of extracting values from objects.
 
 Without destructuring

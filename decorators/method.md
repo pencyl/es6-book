@@ -1,5 +1,7 @@
 # Method Decorators
 
+<div class="spec es6">ES6</div>
+
 Decorators are a way of enriching your methods.
 
 A Method Decorators take the original method and then augment it, and finally return it. This means we can add extra functionality to a method and share this functionality between many different classes.

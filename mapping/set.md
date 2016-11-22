@@ -1,5 +1,7 @@
 # Set
 
+<div class="spec es6">ES6</div>
+
 The Set object is similar to Map() but deals with lists rather than key/values.
 
 ```javascript
@@ -50,4 +52,3 @@ drinks.clear();
 > A WeakSet() is the same as a Map() but the values can be garbage collected for better memory management.
 
 > You can’t iterate over the contents – neither the keys, nor the values, nor the entries. You can’t clear a WeakSet, either.
-

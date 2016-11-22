@@ -1,5 +1,7 @@
 # Array.prototype.values  
 
+<div class="spec es5">ES5</div>
+
 Part of ES5, now widely available.
 
 Returns a new **Array Iterator** that contains the values for each index in an array.

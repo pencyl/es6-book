@@ -1,5 +1,7 @@
 # String.prototype.startsWith
 
+<div class="spec es6">ES6</div>
+
 Checking a string starts with something is a fairly common task.
 
 Currently you can check a string starts with something using `.indexOf()`

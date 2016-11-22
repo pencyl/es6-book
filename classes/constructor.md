@@ -1,5 +1,6 @@
 ##Class Constructor
 
+<div class="spec es6">ES6</div>
 
 The class constructor is auto-invoked on Class instansiation. It replaces any init() function or IIFE.
 

@@ -1,4 +1,13 @@
-.center-image{
+.center-image {
   margin: 0 auto;
   display: block;
+}
+
+.spec {
+  background: #E5DEB0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  font-weight: 700;
 }

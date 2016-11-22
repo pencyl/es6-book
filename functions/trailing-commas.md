@@ -1,5 +1,7 @@
 # Trailing commas in function parameters & calls
 
+<div class="spec es7">ES7</div>
+
 This [proposal](https://github.com/tc39/proposal-trailing-function-commas) is now stage 4, expected to be published in 2017/ES2017. So to use it you will need to use the [ES2017 Babel preset](https://www.npmjs.com/package/babel-preset-es2017).
 
 <br/>

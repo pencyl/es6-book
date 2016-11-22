@@ -1,5 +1,7 @@
 ##Function Parameters Spread
 
+<div class="spec es6">ES6</div>
+
 ```javascript
 function sentence(...words) {
     return words.join(' ');

@@ -1,5 +1,7 @@
 ##Array Spread
 
+<div class="spec es6">ES6</div>
+
 Array spread allows us to do work on arrays that previously need to us Array methods(). It is a shorthand way to deal with common array manipulations.
 
 ```javascript

@@ -1,5 +1,7 @@
 # Object.prototype.freeze
 
+<div class="spec">ES5</div>
+
 Object.freeze freezes an object, stopping any further manipulation. It essentially makes the object *immutable*.
 
 Outside strict mode attempts to change it will silently fail
@@ -26,3 +28,6 @@ Object.freeze(obj);
 obj.newKey = 'hi'; // TypeError
 obj // { foo: 'bar' }
 ```
+
+| Name | Spec | Version
+> https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze

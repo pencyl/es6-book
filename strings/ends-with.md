@@ -1,5 +1,7 @@
 # String.prototype.endsWith
 
+<div class="spec es6">ES6</div>
+
 Like startsWith, checking a string ends with something is common and indexOf is regularly used.
 
 ```javascript

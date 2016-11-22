@@ -1,5 +1,7 @@
 # Property value shorthand
 
+<div class="spec es6">ES6</div>
+
 You've probably written code that assigns properties using variables of the same name before.
 
 ```javascript

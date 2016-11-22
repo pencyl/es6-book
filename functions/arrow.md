@@ -1,5 +1,7 @@
 # Arrow functions
 
+<div class="spec es6">ES6</div>
+
 The "new function"
 
 ```javascript

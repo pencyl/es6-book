@@ -1,5 +1,7 @@
 ##Static variables and methods
 
+<div class="spec es6">ES6</div>
+
 We can both set and inherit static methods and variables in ES6 class construction.
 
 ```javascript

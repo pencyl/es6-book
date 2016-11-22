@@ -1,5 +1,7 @@
 # Array.prototype.map
 
+<div class="spec es5">ES5</div>
+
 Part of ES5, now widely available.
 
 Returns a new array with the result of calling a function on each item in the array.

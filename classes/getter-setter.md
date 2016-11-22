@@ -1,5 +1,7 @@
 ##Class getters and setters
 
+<div class="spec es6">ES6</div>
+
 ```javascript
 class Person {
 

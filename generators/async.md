@@ -1,5 +1,7 @@
 # Async Generator Function
 
+<div class="spec es6">ES6</div>
+
 A generator function can use yield and next() to make async -> sync. This allows queuing of async operations.
 
 ```javascript

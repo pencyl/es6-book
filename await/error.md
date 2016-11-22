@@ -1,5 +1,7 @@
 # Error with Await and Async
 
+<div class="spec es7">ES7</div>
+
 We can leverage try and catch to make out error handling neater with await and async
 
 ```javascript

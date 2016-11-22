@@ -1,5 +1,7 @@
 # Basic Await and Async
 
+<div class="spec es7">ES7</div>
+
 Likely of ES7, available Edge and Firefox (currently Stage-3).
 
 Async and Await are keywords used in tandem to help make Promises asynchronous and more predictable.

@@ -1,5 +1,7 @@
 # Class Construction Example
 
+<div class="spec es6">ES6</div>
+
 This is a complete example of a simple counter web app. We create a View, Model and extended view to emulate a basic MVC framework (like Backbone).
 
 ```javascript
@@ -94,4 +96,3 @@ const expireView = new ExpireView({
 expireView.countdown(); //Hello, my name is john (10)...
 
 ```
-

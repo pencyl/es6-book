@@ -1,5 +1,7 @@
 # Array.prototype.findIndex
 
+<div class="spec es6">ES6</div>
+
 Returns the index of the item found by the testing function.
 
 ```javascript

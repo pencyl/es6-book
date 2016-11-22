@@ -1,5 +1,7 @@
 # Infinite Generator Function
 
+<div class="spec es6">ES6</div>
+
 Generators can be powerful when considering iterables are not finite.
 
 ```javascript

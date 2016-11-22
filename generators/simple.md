@@ -1,5 +1,7 @@
 # Simple Generator Function
 
+<div class="spec es6">ES6</div>
+
 A generator function is used for defining an iterator that can maintain its own state. The generated iterator can also be paused and resumed.
 
 ```javascript
@@ -17,7 +19,7 @@ The generator function is defined with an asterisk (*) and has one or more yield
 const count = new Count();
 ```
 
-We invoke the Count() generator function to the newcount constant. 
+We invoke the Count() generator function to the newcount constant.
 
 ```javascript
 count.next(); // { value: 1, done: false}

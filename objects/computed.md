@@ -1,5 +1,7 @@
 # Computed properties
 
+<div class="spec es6">ES6</div>
+
 ```javascript
 function getCar(make) {
     var carObj = {

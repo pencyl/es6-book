@@ -1,5 +1,7 @@
 ##Classes Intro
 
+<div class="spec es6">ES6</div>
+
 ES6 classes are syntactical sugar over the Objects and prototypes that we're used to working with. They simply offer a much nicer, cleaner and clearer syntax for creating these objects and dealing with inheritance.
 
 **Old Class Contruction**
