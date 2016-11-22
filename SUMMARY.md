@@ -4,7 +4,7 @@
   * [GitHub](setup/github.md)
   * [CLI](setup/the-command-line.md)
   * [Node.js](setup/node-js.md)
-* [ES6](es6/README.md)
+* [ES6]()
   * [History](es6/history.md)
   * [Browser support](es6/browser-support.md)
   * [Node.js support](es6/node-support.md)

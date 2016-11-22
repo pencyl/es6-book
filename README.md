@@ -1,9 +1,5 @@
 <img src="img/logo.png" class="center-image" height="50" />
 
->
->**[View this book online here](https://pencyl.gitbooks.io/es6-book)**
->
-
 # ES6 Course Introduction
 
 #### Morning (9.30 - 12.30)
