@@ -19,4 +19,8 @@ At this point, semantics & syntax are completely laid out and the current spec t
 ### Stage 4 "Finished"
 It's in the field and there's at least 2 implementations, it will get included in the next ECMAScript revision.
 
-> Current TC39 proposals can be viewed on [GitHub](https://github.com/tc39/proposals)
+
+Current TC39 proposals can be viewed on [GitHub](https://github.com/tc39/proposals)
+
+
+For example, the proposal for the [String.prototype.padStart & String.prototype.padEnd](https://github.com/tc39/proposal-string-pad-start-end) implementation.
