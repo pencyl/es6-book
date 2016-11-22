@@ -31,7 +31,7 @@ myObject // { foo: 'bar' }
 ```javascript
 var defaults = { logging: true };
 var myConfig = Object.assign({
-  logLevel: 'verbose'
+    logLevel: 'verbose'
 }, defaults);
 
 myConfig // { logging: true, logLevel: 'verbose' }

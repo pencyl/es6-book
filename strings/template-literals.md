@@ -20,10 +20,10 @@ No extra syntax is required to do multi line strings, once it's a template liter
 Before...
 ```javascript
 var multiLineString = 'line one of a string' +
-  'blah' +
-  'blah' +
-  'blah' +
-  'blah'
+    'blah' +
+    'blah' +
+    'blah' +
+    'blah'
 ```
 
 Now...
@@ -95,16 +95,16 @@ describe(`/api/blah shouldn't return a 404`, ...
 Whilst there's [thousands](https://libraries.io/search?platforms=NPM&q=templating) of better ways to do this. You could use it for basic templating without any additional dependencies...
 ```javascript
 const tmpl = names => `
-  <table>
-  ${names.map(name => `
-      <tr><td>${name.first}</td></tr>
-      <tr><td>${name.last}</td></tr>
-  `).join('')}
-  </table>`;
+    <table>
+        ${names.map(name => `
+            <tr><td>${name.first}</td></tr>
+            <tr><td>${name.last}</td></tr>
+        `).join('')}
+    </table>`;
 
 const data = [
-  { first: 'Matt', last: 'Tortolani' },
-  { first: 'Callum', last: 'Rimmer' },
+    { first: 'Matt', last: 'Tortolani' },
+    { first: 'Callum', last: 'Rimmer' },
 ];
 
 tmpl(data);

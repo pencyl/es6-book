@@ -8,10 +8,10 @@ The testing function receives the current element, index and full array as param
 
 ```javascript
 const cars = [
-  { color:'red', engineSize: 1.0},
-  { color:'red', engineSize: 1.6},
-  { color:'blue', engineSize: 2.0},
-  { color:'green', engineSize: 3.0}
+    { color:'red', engineSize: 1.0},
+    { color:'red', engineSize: 1.6},
+    { color:'blue', engineSize: 2.0},
+    { color:'green', engineSize: 3.0}
 ];
 
 cars.find(function(car) {

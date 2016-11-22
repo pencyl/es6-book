@@ -11,16 +11,16 @@ Allows you to easily manipulate or add to each item in an array, without looping
 ```javascript
 
 const cars = [
-  { color:'red', engineSize: 1.0},
-  { color:'red', engineSize: 1.6},
-  { color:'blue', engineSize: 2.0},
-  { color:'green', engineSize: 3.0}
+    { color:'red', engineSize: 1.0},
+    { color:'red', engineSize: 1.6},
+    { color:'blue', engineSize: 2.0},
+    { color:'green', engineSize: 3.0}
 ];
 
 const engineSizes = cars.map(function(car) {
-  return {
-	  engineSize: car.engineSize
-  }
+    return {
+        engineSize: car.engineSize
+    }
 });
 
 console.log(engineSizes); // new array
@@ -32,14 +32,14 @@ Useful for omitting unneeded keys, for example...
 
 ```javascript
 const results = [
-  { id: 1, name: 'Matt' },
-  { id: 2, name: 'Cal' },
+    { id: 1, name: 'Matt' },
+    { id: 2, name: 'Cal' },
 ];
 
 res.send(results.map(function (result) {
-  return {
-    name: result.name
-  }
+    return {
+      name: result.name
+    }
 });
 // res.send called [{ name: 'Matt' }, { name: 'Cal' }]
 ```

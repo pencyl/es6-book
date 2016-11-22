@@ -8,10 +8,10 @@ The filtering function receives the value of the current element, it's index and
 
 ```javascript
 const cars = [
-  { color:'red', engineSize: 1.0},
-  { color:'red', engineSize: 1.6},
-  { color:'blue', engineSize: 2.0},
-  { color:'green', engineSize: 3.0}
+    { color:'red', engineSize: 1.0},
+    { color:'red', engineSize: 1.6},
+    { color:'blue', engineSize: 2.0},
+    { color:'green', engineSize: 3.0}
 ];
 
 cars.filter(function(car) {

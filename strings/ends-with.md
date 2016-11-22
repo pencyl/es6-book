@@ -4,7 +4,7 @@ Like startsWith, checking a string ends with something is common and indexOf is 
 
 ```javascript
 function isJpg (name) {
-  return name.indexOf('jpg') > 0;
+    return name.indexOf('jpg') > 0;
 }
 isJpg('photo.jpg'); // true
 ```
@@ -19,8 +19,8 @@ So, again, we could write more code.
 
 ```javascript
 function isJpg (name) {
-  var lastThreeCharacters = name.length - 3;
-  return name.indexOf('jpg', lastThreeCharacters) > 0;
+    var lastThreeCharacters = name.length - 3;
+    return name.indexOf('jpg', lastThreeCharacters) > 0;
 }
 isJpg('photo.jpg'); // true
 isJpg('photojpg.gif'); // false
@@ -30,7 +30,7 @@ Now, we can simplify this in ES6.
 
 ```javascript
 function isJpg (name) {
-  return name.endsWith('jpg');
+    return name.endsWith('jpg');
 }
 isJpg('photo.jpg'); // true
 isJpg('photojpg.gif'); // false

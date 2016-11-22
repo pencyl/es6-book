@@ -12,11 +12,11 @@ Blocks are completely valid and have been implemented since JavaScript 1.0
 This is valid...
 ```javascript
 function blocks() {
-  var message = 'hi';
+    var message = 'hi';
 
-  {
-    return message;
-  }
+    {
+        return message;
+    }
 }
 
 blocks(); // 'hi'
@@ -61,14 +61,14 @@ Let's swap the values of an array, using a temporary variable, but keeping that 
 
 ```javascript
 function swap(values) {
-  {
-    let temp = values[0];
-    values[0] = values[1];
-    values[1] = temp;
-  }
+    {
+        let temp = values[0];
+        values[0] = values[1];
+        values[1] = temp;
+    }
 
-  console.log(values); // [2, 1]
-  console.log(temp); // "ReferenceError: temp is not defined
+    console.log(values); // [2, 1]
+    console.log(temp); // "ReferenceError: temp is not defined
 }
 
 swap([1, 2]);
@@ -85,8 +85,8 @@ function letScope () {
     }
 
     {
-      let price = 100000;
-      console.log(price); // 100000
+        let price = 100000;
+        console.log(price); // 100000
     }
 
     console.log(price); // "ReferenceError: price is not defined
@@ -101,15 +101,15 @@ What was that ReferenceError all about?
 var's are "hoisted", which allows us to use them before they're defined.
 ```javascript
 function baz() {
-	bar();
-	var a = 1;
+    bar();
+    var a = 1;
 }
 
 // is interpreted as
 function baz() {
-	var a;
-	bar();
-	a = 1;
+    var a;
+    bar();
+    a = 1;
 }
 ```
 
@@ -127,15 +127,15 @@ To avoid TDZ errors, consider declaring let's at the top of their block
 
 ```javascript
 function name (obj) {
-	var name = '';
+    var name = '';
 
-	{ let tmp;
+    { let tmp;
 
-		tmp = obj.name;
-		name = tmp;
-	}
+        tmp = obj.name;
+        name = tmp;
+    }
 
-	return name;
+    return name;
 }
 
 name({name: 'matt'});
@@ -151,12 +151,12 @@ This wouldn't work with `var` as it would refer to the same variable in each ite
 var $list = $('#list')
 
 for (let i = 1; i <= 5; i++) {
-  let item = $('<li>' + 'Item ' + i + '</li>');
+    let item = $('<li>' + 'Item ' + i + '</li>');
 
-  item.bind( 'click', function() {
-    console.log('You clicked item ' + i);
-  });
-  $list.append(item);
+    item.bind( 'click', function() {
+        console.log('You clicked item ' + i);
+    });
+    $list.append(item);
 }
 ```
 
@@ -175,18 +175,18 @@ Sometimes, it might even make more sense to use a mix of var and let
 
 ```javascript
 function maxWidth() {
-  var width = 10;
+    var width = 10;
 
-  if (width > 100) {
-      let a = width * 2;
-      console.log(a);
-  }
+    if (width > 100) {
+        let a = width * 2;
+        console.log(a);
+    }
 
-  if (width > 500) {
-      let b = width / 2;
-      console.log(b);
-  }
+    if (width > 500) {
+        let b = width / 2;
+        console.log(b);
+    }
 
-  console.log(width);
+    console.log(width);
 }
 ```

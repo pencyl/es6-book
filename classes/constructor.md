@@ -5,10 +5,10 @@ The class constructor is auto-invoked on Class instansiation. It replaces any in
 
 ```javascript
 class Person {
-	constructor(name) {
-		this.name = name;
-		this.gender = (this.name === 'bob') ? 'male' : 'female'
-	}
+    constructor(name) {
+        this.name = name;
+        this.gender = (this.name === 'bob') ? 'male' : 'female'
+    }
 }
 
 const person = new Person('Bob');

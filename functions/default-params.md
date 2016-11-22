@@ -4,9 +4,9 @@ Previously in JavaScript if you wanted to use default parameters you'd have to u
 
 ```javascript
 function oldWay(a, b) {
-  a = a || 1;
-  b = b || 10;
-  return a * b;
+    a = a || 1;
+    b = b || 10;
+    return a * b;
 }
 oldWay(); // 10
 ```
@@ -21,9 +21,9 @@ Then there's the slippery slope of...
 
 ```javascript
 function oldWay(a, b) {
-  if (a === undefined) {
-      a = 10;
-  }
+    if (a === undefined) {
+        a = 10;
+    }
 }
 ```
 
@@ -33,7 +33,7 @@ With ES6 we can now handle default parameters properly...
 
 ```javascript
 function newWay(a = 1, b = 10) {
-  return a * b;
+    return a * b;
 }
 newWay(); // 10
 newWay(0); // 0
@@ -46,7 +46,7 @@ Default parameters can also be expressions...
 
 ```javascript
 function foo(a = 1 + 1, b = 10) {
-  return a * b;
+    return a * b;
 }
 foo(); // 20
 ```
@@ -57,7 +57,7 @@ You can call other functions available within the current scope, like this node 
 var config = require('config');
 
 export function urlBuilder(host = config.get('host'), port = 27017) {
-  return 'mongod://' host + ':' + port;
+    return 'mongod://' host + ':' + port;
 }
 
 // assuming config.get('host') returns 'hostname'
@@ -68,7 +68,7 @@ They can even be self invoking functions
 
 ```javascript
 function madness(a = (function(){ return 10 }()), b = 5) {
-  return a * b;
+    return a * b;
 }
 
 madness(); // 50
@@ -85,14 +85,14 @@ The function below, handleResults uses the array method 'map'. If something that
 
 ```javascript
 function handleResults(results = []) {
-  // if results wasn't an array we'd get an error here
-  // "TypeError: Cannot read property 'map' of undefined
-  // previously we'd have to check results exists & it's an array
-  return results.map(function (result) {
-    return {
-      id: result.id
-    }
-  });
+    // if results wasn't an array we'd get an error here
+    // "TypeError: Cannot read property 'map' of undefined
+    // previously we'd have to check results exists & it's an array
+    return results.map(function (result) {
+        return {
+            id: result.id
+        }
+    });
 }
 ```
 
@@ -107,11 +107,11 @@ Default params still won't help you enforce a required parameter, but, we can us
 
 ```javascript
 function required () {
-  throw new Error('Required param missing');
+    throw new Error('Required param missing');
 }
 
 function foo (baz = 2, iReallyNeedThis = required()) {
-  return baz + iReallyNeedThis;
+    return baz + iReallyNeedThis;
 }
 
 foo(1, 2); // 3

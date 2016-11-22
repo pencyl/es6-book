@@ -14,13 +14,13 @@ It's not life changing and you may not agree with the style, but, it's a good ex
 
 ```javascript
 function helloWorld(
-  one,
-  two
+    one,
+    two
 ) { return one + two }
 
 helloWorld(
-  1,
-  2
+    1,
+    2
 ); // 3
 ```
 
@@ -30,17 +30,17 @@ Lets add a third parameter...
 
 ```diff
  function helloWorld(
-   one,
--  two
-+  two,
-+  three
+     one,
+-    two
++    two,
++    three
  ) { return one + two }
 
  helloWorld(
-   1,
--  2
-+  2,
-+  3
+     1,
+-    2
++    2,
++    3
  );
 ```
 
@@ -50,15 +50,15 @@ If the function was defined with trailing commas, it would just be a two line ch
 
 ```diff
  function helloWorld(
-   one,
-   two,
-+  three,
+     one,
+     two,
++    three,
  ) { return one + two }
 
  helloWorld(
-   1,
-   2,
-+  3,
+     1,
+     2,
++    3,
  );
 ```
 

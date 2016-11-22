@@ -4,7 +4,7 @@ Think of it as "the rest"
 
 ```javascript
 function foo(a, b, ...theArgs) {
-  console.log(a, b, theArgs);
+    console.log(a, b, theArgs);
 }
 foo(1, 2, 3, 4, 5); // 1, 2, [3, 4, 5]
 ```

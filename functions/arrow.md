@@ -4,7 +4,7 @@ The "new function"
 
 ```javascript
 var add = function (a, b) {
-  return a + b;
+    return a + b;
 }
 ```
 Becomes
@@ -107,11 +107,11 @@ MyCounter.prototype.count = function () {
 
 ```javascript
 $('.timer').each(function () {
-  var that = this;
+    var that = this;
 
-  setInterval(function () {
-    $(that).text(Date.now());
-  }, 1000);
+    setInterval(function () {
+        $(that).text(Date.now());
+    }, 1000);
 });
 
 ```
@@ -120,7 +120,7 @@ Fat arrow doesn't have scope issue because the ```this``` binding is not dynamic
 
 ```javascript
 $('.timer').each(function () {
-  setInterval(() => $(this).text(Date.now()), 1000);
+    setInterval(() => $(this).text(Date.now()), 1000);
 });
 ```
 
@@ -133,7 +133,7 @@ Whilst it's tempting to use the terse new syntax and refactor old code, you need
 For example, this mocha test
 ```javascript
 describe('our test', () => {
-  this.timeout(100);
+    this.timeout(100);
 });
 
 // TypeError: this.timeout is not a function
@@ -145,8 +145,8 @@ We also lose the ability to use access the arguments variable, as it doesn't hav
 
 ```javascript
 () => {
-  var level = arguments[0]; // global
-  var message = arguments[1]; // global
+    var level = arguments[0]; // global
+    var message = arguments[1]; // global
 }
 ```
 
@@ -156,14 +156,14 @@ We also lose the ability to use access the arguments variable, as it doesn't hav
 ```javascript
 var viewController = {
 
-  render: function(data) {
-    document.write(data);
-  },
+    render: function(data) {
+        document.write(data);
+    },
 
-  getData: function() {
-    // ajax
-    this.render('<p>old school</p>');
-  }
+    getData: function() {
+        // ajax
+        this.render('<p>old school</p>');
+    }
 }
 
 viewController.getData(); // 'meh'
@@ -172,8 +172,8 @@ viewController.getData(); // 'meh'
 Changing getData to use an arrow function looks neater, but changes ```this```
 ```javascript
 getData: () => {
-  // ajax
-  this.render('<p>old school</p>');
+    // ajax
+    this.render('<p>old school</p>');
 }
 viewController.getData(); // nothing
 ```
@@ -193,7 +193,7 @@ In the real world, the arrow function is best used to replace simple inline anon
 ```javascript
 var simpleArray = [1,2,3];
 var doubled = simpleArray.map(function(num) {
-  return num * 2
+    return num * 2
 });
 console.log(doubled); // [2,4,6]
 ```

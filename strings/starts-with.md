@@ -13,7 +13,7 @@ There's a caveat though, what if the string we're testing exists more than once?
 
 ```javascript
 function isGoogleUrl (url) {
-  return url.indexOf('google.com') === 0;
+    return url.indexOf('google.com') === 0;
 }
 
 isGoogleUrl('http://google.com?referrer=google.com'); // false

@@ -60,12 +60,12 @@ console.log(discount); // 0
 
 ```javascript
 var data = {
-  productName: 'Shoes',
-  price: 24,
-  stock: {
-    store: 4,
-    online: 100
-  }
+    productName: 'Shoes',
+    price: 24,
+    stock: {
+        store: 4,
+        online: 100
+    }
 };
 
 var { stock: { store } } = data;

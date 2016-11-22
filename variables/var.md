@@ -8,8 +8,8 @@ var's scope are limited to functions
 var name = 'Rick';
 ​
 ​function getName () {
-	var name = 'Morty'; // local variable, only available inside getName();
-	console.log(name); // 'Morty'
+    var name = 'Morty'; // local variable, only available inside getName();
+    console.log(name); // 'Morty'
 }
 console.log(name); // 'Rick'
 
@@ -20,10 +20,10 @@ getName();
 
 ```javascript
 function getPrice (productName) {
-  if (productName === 'whisky') {
-    var price = 25.99;
-  }
-  return price;
+    if (productName === 'whisky') {
+        var price = 25.99;
+    }
+    return price;
 }
 getPrice('whisky') // 25.99
 
@@ -34,11 +34,11 @@ The reason this doesn't break is, var's are function scoped. They are "hoisted",
 
 ```javascript
 function getPrice (productName) {
-  var price;
-  if (productName === 'whisky') {
-    var price = 25.99;
-  }
-  return price;
+    var price;
+    if (productName === 'whisky') {
+        var price = 25.99;
+    }
+    return price;
 }
 getPrice('whisky') // 25.99
 

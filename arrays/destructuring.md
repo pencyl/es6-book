@@ -36,7 +36,7 @@ Consider a function that returns 3 things and you want only 2.
 
 ```javascript
 var foo = () => {
-  return [1, 2, 3];
+    return [1, 2, 3];
 };
 
 var [a, b] = foo();

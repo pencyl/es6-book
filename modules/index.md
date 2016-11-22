@@ -45,7 +45,7 @@ import 'react'; // React does it's magic, we can't refer to it
 ```javascript
 /* myModule.js */
 export default function () {
-	return 'boo!'
+    return 'boo!'
 }
 /* end myModule.js */
 
@@ -85,7 +85,7 @@ console.log(pie); // 3.14
 export const greeting = 'hello';
 export const sendOff = 'cya';
 export function greet(name) {
-	return greeting + ' ' + name;
+    return greeting + ' ' + name;
 };
 /* end myModule.js */
 
@@ -102,7 +102,7 @@ console.log(greet('Matt')); // hello
 export const greeting = 'hello';
 export const sendOff = 'cya';
 export function greet(name) {
-	return greeting + ' ' + name;
+    return greeting + ' ' + name;
 };
 /* end myModule.js */
 
@@ -118,7 +118,7 @@ console.log(greetingStuff.greet('Matt')); // hello
 export const greeting = 'hello';
 export const sendOff = 'cya';
 export default function greet(name) {
-	return greeting + ' ' + name;
+    return greeting + ' ' + name;
 };
 /* end myModule.js */
 
