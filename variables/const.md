@@ -33,4 +33,4 @@ Whilst it doesn't make a variable immutable, it's still very useful for showing 
 
 > Think about it more as signalling intent
 
-> See [Object.freeze](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze) for objects, or [Symbols](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) for strings
+> See [Object.freeze](/objects/freeze.html) for objects, or [Symbols](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) for strings
