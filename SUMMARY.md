@@ -38,6 +38,7 @@
   * [FindIndex](arrays/findIndex.md)
   * [Filter](arrays/filter.md)
   * [Map](arrays/map.md)
+  * [Reduce](arrays/reduce.md)
   * [Keys](arrays/keys.md)
   * [Values](arrays/values.md)
   * [Includes](arrays/includes.md)
