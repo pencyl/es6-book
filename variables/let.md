@@ -2,17 +2,19 @@
 
 <div class="spec es6">ES6</div>
 
+let's are "the new var", they work very much like var. They define a variable and that variable can be changed, incremented, decremented, deleted etc
 
-let's are the new var, they work very much like var. The main difference is that the scope of a var variable is the entire enclosing function. let's are block scope variables.
+<br/>
 
-[Unlike var](/variables/var), let's scope is limited to the block `{}` they are declared in.
+However, the difference is a *[vars](/variables/var)* scope is limited to the enclosing function, a *let*'s scope is limited to the block `{}` they are declared in.
 
 ## Blocks
 What's a block?
 
-Blocks are completely valid and have been implemented since JavaScript 1.0
+Blocks are completely valid and have been implemented since JavaScript 1.0.
 
-This is valid...
+Up until now you've probably only used blocks to control flow statements, e.g. `if, else, for & while`.
+
 ```javascript
 function blocks() {
     var message = 'hi';
@@ -25,9 +27,9 @@ function blocks() {
 blocks(); // 'hi'
 ```
 
-Up until now you've probably only used blocks to control flow statements, e.g. `if, else, for & while`
-
 ## Block scoped variables using let
+
+Here's a basic function using a var to define "price".
 
 ```javascript
 function varScope () {
@@ -43,7 +45,11 @@ function varScope () {
 varScope();
 ```
 
-The same function rewritten to use let
+The var has been [hoisted](/variables/var) and is available even before it is defined.
+
+<br/>
+
+The same function rewritten to use let...
 
 ```javascript
 function letScope () {
@@ -59,6 +65,8 @@ function letScope () {
 letScope();
 ```
 The price variable defined in our `if (true)` block is only scoped to that block.
+
+A reference error is now thrown if you try to access the price variable outside it's block.
 
 Let's swap the values of an array, using a temporary variable, but keeping that temporary variable hidden away in it's own block.
 
@@ -77,7 +85,11 @@ function swap(values) {
 swap([1, 2]);
 ```
 
-Multiple blocks could reuse the same variable name when using let, as  their scope is limited to the block they're declared in
+Nice, "temp" only exists in those 3 lines in it's enclosing block.
+
+<br/>
+
+As their scope is limited to the block they're declared in, multiple blocks can be used to allow us to reuse the same variable name multiple times...
 
 ```javascript
 function letScope () {
@@ -98,10 +110,30 @@ function letScope () {
 letScope();
 ```
 
+<br />
+
+Back to our loop example where `i` is hoisted. Changing this to a let makes it work with no function creator!
+
+```javascript
+var tasks = [];
+
+for (let i = 0; i < 3; i++) {
+    tasks[i] = function() { console.log('task number - ' + i); };
+}
+
+
+for (var y = 0; y < 3; y++) {
+    tasks[y]();
+}
+// 'task number - 0'
+// 'task number - 1'
+// 'task number - 2'
+```
+
 ### The TDZ (Temporal Dead Zone)
 What was that ReferenceError all about?
 
-var's are "hoisted", which allows us to use them before they're defined.
+As we've covered, var's are "hoisted", which allows us to use them before they're defined.
 ```javascript
 function baz() {
     bar();
@@ -126,7 +158,7 @@ let a = 'hey';
 let & const declarations **do not hoist**. Unlike var's they will not return undefined if accessed before initialization, they will throw an error!
 
 ### Best practices
-To avoid TDZ errors, consider declaring let's at the top of their block
+To avoid TDZ errors, consider declaring let's at the top of their block.
 
 ```javascript
 function name (obj) {
@@ -142,25 +174,6 @@ function name (obj) {
 }
 
 name({name: 'matt'});
-```
-
-### More Examples
-
-Here `i` is used multiple times, but it works because `i` is a new instance on each iteration of the loop.
-
-This wouldn't work with `var` as it would refer to the same variable in each iteration of the loop.
-
-```javascript
-var $list = $('#list')
-
-for (let i = 1; i <= 5; i++) {
-    let item = $('<li>' + 'Item ' + i + '</li>');
-
-    item.bind( 'click', function() {
-        console.log('You clicked item ' + i);
-    });
-    $list.append(item);
-}
 ```
 
 ### Should let replace var?
