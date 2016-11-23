@@ -40,6 +40,7 @@
   * [Map](arrays/map.md)
   * [Keys](arrays/keys.md)
   * [Values](arrays/values.md)
+  * [Includes](arrays/includes.md)
   * [Destructuring](arrays/destructuring.md)
 * [Objects]()
   * [Assign](objects/assign.md)
