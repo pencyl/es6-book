@@ -36,7 +36,7 @@ function varScope () {
 
     if (true) {
         var price = 10;
-        console.log(price); // 1
+        console.log(price); // 10
     }
 
     console.log(price); // 10!
@@ -56,7 +56,7 @@ function letScope () {
 
     if (true) {
         let price = 10;
-        console.log(price); // 1
+        console.log(price); // 10
     }
 
     console.log(price); // "ReferenceError: price is not defined
@@ -96,7 +96,7 @@ function letScope () {
 
     if (true) {
         let price = 10;
-        console.log(price); // 1
+        console.log(price); // 10
     }
 
     {
@@ -121,8 +121,7 @@ for (let i = 0; i < 3; i++) {
     tasks[i] = function() { console.log('task number - ' + i); };
 }
 
-
-for (var y = 0; y < 3; y++) {
+for (var y = 0; y < tasks.length; y++) {
     tasks[y]();
 }
 // 'task number - 0'

@@ -66,7 +66,7 @@ for (var i = 0; i < 3; i++) {
 }
 
 
-for (var y = 0; y < 3; y++) {
+for (var y = 0; y < tasks.length; y++) {
     tasks[y]();
 }
 // 'task number - 3'
@@ -90,8 +90,7 @@ for (var i = 0; i < 3; i++) {
     tasks[i] = createfunc(i);
 }
 
-
-for (var y = 0; y < 3; y++) {
+for (var y = 0; y < tasks.length; y++) {
     tasks[y]();
 }
 // 'task number - 0'
