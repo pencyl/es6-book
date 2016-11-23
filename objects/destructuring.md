@@ -77,23 +77,3 @@ console.log(store); // 4
 var { stock: { store: inStoreStock } } = data;
 console.log(inStoreStock); // 4
 ```
-
-#### console.log trick
-
-It's fairly common to log the state of a variable like the following
-
-```javascript
-const myVar = 124;
-console.log('myVar', myVar); // myVar 124
-```
-
-With object destructing we can simplify this by logging an object, but not specifying the key name, the variable name will be used.
-
-```javascript
-const myVar = 124;
-console.log({myVar}); // {myVar: 124}
-```
-
-Arguably what is logged to the console isn't as clear, as the object is only there for sake of simplifying the code.
-
-But, this method is less prone to typing errors and shorter to type.
