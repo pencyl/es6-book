@@ -13,10 +13,10 @@ Allows you to easily manipulate or add to each item in an array, without looping
 ```javascript
 
 const cars = [
-    { color:'red', engineSize: 1.0},
-    { color:'red', engineSize: 1.6},
-    { color:'blue', engineSize: 2.0},
-    { color:'green', engineSize: 3.0}
+    { color:'red', engineSize: 1.0 },
+    { color:'red', engineSize: 1.6 },
+    { color:'blue', engineSize: 2.0 },
+    { color:'green', engineSize: 3.0 }
 ];
 
 const engineSizes = cars.map(function(car) {

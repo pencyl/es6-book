@@ -7,9 +7,9 @@ Returns the index of the item found by the testing function.
 
 ```javascript
 const cars = [
-    { color:'red', engineSize: 1.0},
-    { color:'blue', engineSize: 2.0},
-    { color:'green', engineSize: 3.0}
+    { color:'red', engineSize: 1.0 },
+    { color:'blue', engineSize: 2.0 },
+    { color:'green', engineSize: 3.0 }
 ];
 
 cars.findIndex(function(car) {
@@ -28,9 +28,9 @@ Lets say we want to replace a car that matches certain criteria with a new car, 
 ```javascript
 
 const cars = [
-    { color:'red', engineSize: 1.0},
-    { color:'blue', engineSize: 2.0},
-    { color:'green', engineSize: 3.0}
+    { color:'red', engineSize: 1.0 },
+    { color:'blue', engineSize: 2.0 },
+    { color:'green', engineSize: 3.0 }
 ];
 
 const newCar = {
