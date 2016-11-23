@@ -46,6 +46,7 @@
   * [Assign](objects/assign.md)
   * [Keys](objects/keys.md)
   * [Values](objects/values.md)
+  * [Seal](objects/seal.md)
   * [Freeze](objects/freeze.md)
   * [Property shorthand](objects/shorthand.md)
   * [Computed property names](objects/computed.md)

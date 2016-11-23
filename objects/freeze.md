@@ -2,30 +2,44 @@
 
 <div class="spec es5">ES5</div>
 
+Object.freeze does everything Object.seal does, but additionally stops values from being changed.
 
-Object.freeze freezes an object, stopping any further manipulation. It essentially makes the object *immutable*.
-
-Outside strict mode attempts to change it will silently fail
+Object.freeze will stop
+- Properties being added
+- Properties being removed
+- Properties being changed in any way
 
 ```javascript
-var obj = { foo: 'bar', deleteMe: true };
-delete obj.deleteMe;
-obj // { foo: 'bar' }
+var user = { name: 'Johnny Five', isAlive: true, arms: 2 };
 
-Object.freeze(obj);
+Object.freeze(user);
 
-obj.newKey = 'hi'; // silent failure
-obj // { foo: 'bar' }
+delete user.isAlive; // false
+user.battery = 100; // 100
+user.name = 'Johnny Six'; // 'Johnny Six'
+
+user; // { name: 'Johnny Five', isAlive: true, arms: 2 }
 ```
 
 Inside strict mode attempts to change it will result in TypeErrors
 ```javascript
-var obj = { foo: 'bar', deleteMe: true };
-delete obj.deleteMe;
-obj // { foo: 'bar' }
+var user = { name: 'Johnny Five' };
 
-Object.freeze(obj);
+Object.seal(user);
 
-obj.newKey = 'hi'; // TypeError
-obj // { foo: 'bar' }
+user.arms = 2; // TypeError
+
+user; // { name: 'Johnny Five' }
+```
+
+Just like with isSealed, can check an object is "frozen" by using Object.prototype.isFrozen.
+
+```javascript
+var thing = {};
+
+Object.isFrozen(thing); // false
+
+Object.freeze(thing);
+
+Object.isFrozen(thing); // true
 ```
