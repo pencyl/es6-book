@@ -29,6 +29,8 @@ isJpg('photo.jpg'); // true
 isJpg('photojpg.gif'); // false
 ```
 
+<br/>
+<br/>
 Now, we can simplify this in ES6.
 
 ```javascript
