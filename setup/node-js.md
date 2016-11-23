@@ -27,5 +27,3 @@ Finally start watching the ES6 files:
 ```unix
 npm start
 ```
-
-> Any files in the /src directory will be outputted to /lib in vanilla es5 code for running on any browser.
