@@ -12,8 +12,8 @@ Alternatively if you use [nvm](https://github.com/creationix/nvm, "Node Version 
 Get the code by cloning the repo
 
 ```unix
-git clone https://github.com/pencyl/es6-course.git
-cd es6-course
+git clone https://github.com/pencyl/es6-shop.git
+cd es6-shop
 ```
 
 Then install the dependencies:
@@ -25,7 +25,7 @@ npm install
 Finally start watching the ES6 files:
 
 ```unix
-npm run watch
+npm start
 ```
 
 > Any files in the /src directory will be outputted to /lib in vanilla es5 code for running on any browser.

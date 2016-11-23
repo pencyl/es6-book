@@ -8,8 +8,8 @@ For this **ES6 Book**
 git clone https://github.com/pencyl/es6-book.git
 ```
 
-For this **ES6 Course Code**
+For this **ES6 Shop Code**
 
 ```unix
-git clone https://github.com/pencyl/es6-course.git
+git clone https://github.com/pencyl/es6-shop.git
 ```

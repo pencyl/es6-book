@@ -4,7 +4,7 @@
 
 #### Morning (9.30 - 12.30)
 - ES6/ES7, history, browser support and where it is going
-- Babel setup
+- Project setup
 - Template strings
 - Const, Let and Var
 - Arrow functions () => {}
@@ -15,12 +15,15 @@
 - Default parameters
 
 #### Afternoon (13.30 - 17.00)
-- React Example
 - Array methods
 - Object methods (assign, keys, value, freeze)
 - Spread operator (object, array, function)
 - *Short break*
 - Rest
+- Await/Async
+
+###If we have time
+
 - Maps
 - Decorators
 - Generators
