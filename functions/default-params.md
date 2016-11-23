@@ -59,7 +59,7 @@ You can call other functions available within the current scope, like this node 
 ```javascript
 var config = require('config');
 
-export function urlBuilder(host = config.get('host'), port = 27017) {
+function urlBuilder(host = config.get('host'), port = 27017) {
     return 'mongod://' host + ':' + port;
 }
 
