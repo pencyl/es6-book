@@ -1,6 +1,6 @@
 #TC39 Process
 
-The [TC39 Process](https://tc39.github.io/process-document/, "TC39 Process document") explains the various stages of a desired feature until it becomes adopted and included in the language.
+The [TC39 Process](https://tc39.github.io/process-document/) explains the various stages of a desired feature until it becomes adopted and included in the language.
 
 Without going into the specifics of the process, what is helpful to know is the various stages a new feature goes through...
 
