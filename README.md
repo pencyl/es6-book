@@ -11,13 +11,13 @@
 - *Short break*
 - Class construction
 - Importing and Exporting
-- Destructuring
 - Default parameters
+- Destructuring
 
 #### Afternoon (13.30 - 17.00)
 - Array methods
-- Object methods (assign, keys, value, freeze)
-- Spread operator (object, array, function)
+- Object methods
+- Spread operator
 - *Short break*
 - Rest
 - Await/Async
@@ -25,6 +25,7 @@
 ###If we have time
 
 - Maps
+- Sets  
 - Decorators
 - Generators
 
