@@ -50,7 +50,7 @@ drinks.clear();
 
 ## Uniqueness
 
-So far, this essenetially looks like a fancy Array. An important distinctiojn is that a Set only stores *unique* values...
+So far, this essentially looks like a fancy Array. An important distinction is that a Set only stores *unique* values...
 
 ```javascript
 const drinks = new Set(['coke', 'pepsi', 'coke', 'pepsi', 'tango']);

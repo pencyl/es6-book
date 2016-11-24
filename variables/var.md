@@ -2,35 +2,22 @@
 
 <div class="spec es1">ES1</div>
 
-
-## Scope
-
-var's scope are limited to functions
-
-```javascript
-var name = 'Rick';
-​
-​function getName () {
-    var name = 'Morty'; // local variable, only available inside getName();
-    console.log(name); // 'Morty'
-}
-console.log(name); // 'Rick'
-
-getName();
-```
+*var*'s are function scoped, and this introduces a few quirks...
 
 ## Hoisting
 
 ```javascript
 function getPrice (productName) {
+
     if (productName === 'whisky') {
         var price = 25.99;
     }
+
     return price;
 }
-getPrice('whisky') // 25.99
 
-getPrice('something else') // undefined
+getPrice('whisky'); // 25.99
+getPrice('something else'); // undefined
 ```
 
 The reason this doesn't break is, var's are function scoped. They are "hoisted", this is evaluated as is more like the following...
@@ -38,13 +25,15 @@ The reason this doesn't break is, var's are function scoped. They are "hoisted",
 ```javascript
 function getPrice (productName) {
     var price;
+
     if (productName === 'whisky') {
-        var price = 25.99;
+        price = 25.99;
     }
+
     return price;
 }
-getPrice('whisky') // 25.99
 
+getPrice('whisky') // 25.99
 getPrice('something else') // undefined
 ```
 

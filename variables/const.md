@@ -10,8 +10,7 @@ Like let, const's are block scope.
 ```javascript
 const foo = [];
 foo.push({something: 'new'});
-console.log(foo);
-// [{someting: 'new'}]
+console.log(foo); // [{ someting: 'new' }]
 ```
 
 If a const is a complex variable like an array or object, it can still have it's contents modified.

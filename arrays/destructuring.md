@@ -29,7 +29,7 @@ console.log(monday); // 'Mon'
 
 If we wanted to omit values, just don't pass in a name...
 ```javascript
-var [a, , b] = [1, 2, 3];
+var [a, ,b] = [1, 2, 3];
 console.log(a, b); // 1, 3
 ```
 
@@ -58,6 +58,6 @@ console.log(a, b); // 2, 1
 
 Variables can even be assigned defaults incase the value pulled from the array isn't defined.
 ```javascript
-var [a=1, b=2, c=3] = [5, 10]
+var [a = 1, b = 2, c = 3] = [5, 10];
 console.log(a, b, c); // 5, 10, 3
 ```

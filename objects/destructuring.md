@@ -38,15 +38,19 @@ console.log(price); // 10
 console.log(productName); // "ReferenceError: productName is not defined
 ```
 
-### Default values
+### Missing variables
+
 If you try to destructure and the variable isn't defined. It will return undefined.
+
 ```javascript
 var data = { productName: 'Belt', price: 50 };
 
 var { productName, price, discount } = data;
 
-console.log(discount);
+console.log(discount); // undefined
 ```
+
+### Default values
 
 Just like with arrays we can still use default values incase a value is missing.
 ```javascript
