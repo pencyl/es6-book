@@ -18,7 +18,7 @@ var add = (a, b) => a + b;
 ### What's different
 
 - It's faster to type, maybe
-- Don't need ```function``` keyword
+- Don't need `function` keyword
 - Don't always need parentheses `()`
 - Don't always need curly brackets `{}`
 - They're always function expressions, cannot be bound, cannot be named
@@ -119,8 +119,9 @@ $('.timer').each(function () {
 
 ```
 
-Fat arrow doesn't have scope issue because the ```this``` binding is not dynamic, it is lexical, like ```let```
+An arrow function won't have this scope issue because the `this` binding is not dynamic, it is lexical, like `let`.
 
+So now, the this refers to the original jQuery context from the `$('.timer').each` call.
 ```javascript
 $('.timer').each(function () {
     setInterval(() => $(this).text(Date.now()), 1000);
@@ -129,7 +130,7 @@ $('.timer').each(function () {
 
 ### Caveats
 
-As we've seen, the lexical scope of ```this``` within an arrow function body is different to a normal anonymous function.
+As we've seen, the scope of `this` within an arrow function body is different to a normal anonymous function.
 
 Whilst it's tempting to use the terse new syntax and refactor old code, you need to bear it in mind as it can have unintended consequences.
 
@@ -144,7 +145,9 @@ describe('our test', () => {
 
 Now the describe block uses an arrow function it can't access the mocha context.
 
-We also lose the ability to use access the arguments variable, as it doesn't have it's own scope we get the global arguments
+<br />
+
+We also lose the ability to use access the arguments variable, as it doesn't have it's own scope we get the global arguments.
 
 ```javascript
 () => {
