@@ -1,4 +1,4 @@
-# es6-shop
+# Shop
 
 Today we'll be working on a basic shop example.
 
