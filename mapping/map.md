@@ -80,3 +80,11 @@ drinks.set(water, ['Water']);
 
 drinks.get(coke); // ["Sugar", "Water", "Other"]
 ```
+
+<br/>
+<br/>
+<br/>
+
+> A WeakMap() is the same as a Map() but the values can be garbage collected for better memory management. That means that you can associate data with objects without having to worry about memory leaks.
+
+> You can’t iterate over the contents – neither the keys, nor the values, nor the entries. You can’t clear a WeakMap, either.
