@@ -5,6 +5,8 @@
 
 The Map object is a simple key/value map. It is a formalisation and replacement for a simpler object literal map.
 
+Any value, objects or primitive values can be used as either a key or a value.
+
 ```javascript
 function getDrink(type) {
     const drinks = {
@@ -34,38 +36,47 @@ getDrink('orange'); //Unknown drink!
 
 The advantage to Map() is that it offers a number of methods that aid with its use.
 
+We can find the size and interrogate the Map.
 ```javascript
 drinks.size; // 3
-drinks.has('orange') //false
-drinks.has('coke') //true
-```
-
-We can find the size and interrogate the Map.
-
-```javascript
-drinks.keys(); // [coke,pepsi,default] as a Iterator
-drinks.values() // ['Coke','Pepsi','Unknown drink!'] as a Iterator;
+drinks.has('orange'); // false
+drinks.has('coke'); // true
 ```
 
 We can return the keys and values as an iterator.
-
 ```javascript
-drinks.forEach((value,key) => {
-    console.log(value,key)
-});
+drinks.keys(); // [coke, pepsi, default] as a Iterator
+drinks.values() // ['Coke','Pepsi','Unknown drink!'] as a Iterator;
 ```
 
 We can also iterate of the keys and values with forEach().
+```javascript
+drinks.forEach((value, key) => {
+    console.log(value, key)
+});
+```
 
+Finally, we can clear the map of one or all values
 ```javascript
 drinks.delete('coke');
 drinks.clear();
 ```
 
-Finally, we can clear the map of one or all values
+## Objects as keys
 
-> **WeakMap()**
+The biggest advantage map brings is being able to use objects as keys.
 
-> A WeakMap() is the same as a Map() but the values can be garbage collected for better memory management. That means that you can associate data with objects without having to worry about memory leaks.
+We can rewrite our drinks map to show the advantages, we'll use the key to set an object with an `id` and a `type` and the value with be the ingredients...
 
-> You can’t iterate over the contents – neither the keys, nor the values, nor the entries. You can’t clear a WeakMap, either.
+```javascript
+const drinks = new Map();
+var coke = { id: 'coke', type: 'drink' };
+var water = { id: 'water', type: 'drink' };
+
+drinks.set(coke, ['Sugar', 'Water', 'Other']);
+drinks.set(water, ['Water']);
+
+[...drinks.keys()]; // [{ id: 'coke', type: 'drink' }, { id: 'water', type: 'drink' }];
+
+drinks.get(coke); // ["Sugar", "Water", "Other"]
+```
