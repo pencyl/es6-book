@@ -2,6 +2,22 @@
 
 <div class="spec es6">ES6</div>
 
+Previously getters and setters existed in ES5, you would've used `Object.defineProperty` to set them...
+
+```javascript
+var player = {
+    level: 5
+};
+
+Object.defineProperty(player, 'health', {
+    get: function() {
+        return player.level * 10.5;
+    }
+});
+
+console.log(player.health); // 52.5
+```
+
 
 ```javascript
 class Person {
@@ -11,12 +27,10 @@ class Person {
 	}
 
 	get name() {
-		console.log(`getter fired for ${this.name}`);
 		return this._name;
 	}
 
 	set name(name) {
-		console.log(`setter fired for ${name}`);
 		this._name = name;
 	}
 
