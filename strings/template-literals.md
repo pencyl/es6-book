@@ -93,7 +93,7 @@ In the real world, you are rarely going to need to escape a backtick, which shou
 ```javascript
 describe(`/api/blah shouldn't return a 404`, ...
 ```
-// todo too soonnfor arrow
+
 ##### Templating
 Whilst there's [thousands](https://libraries.io/search?platforms=NPM&q=templating) of better ways to do this. You could use it for basic templating without any additional dependencies...
 ```javascript
